@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 import datetime
-from App1.models import Personas
+from Apps.models import Personas
 from django.template import loader
 
 
@@ -22,7 +22,7 @@ def lista_familiares(request):
 
     lista = Personas.objects.all()
 
-    return render(request, "template.html",{"lista_familiares":lista})
+    return render(request, "template.html", {"lista_familiares":lista})
 
 
 
