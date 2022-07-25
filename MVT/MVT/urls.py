@@ -20,7 +20,8 @@ from App1.views import lista_familiares
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("Lista-familiares/", lista_familiares),
     path("parientes/<vinculo>/<nombre>/<apellido>/<edad>/", Pariente),
+    path("Lista-familiares/", lista_familiares),
+    
 
 ]
