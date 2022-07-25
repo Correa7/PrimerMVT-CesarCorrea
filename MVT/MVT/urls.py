@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from App1.views import Pariente
+from App1.views import lista_familiares
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("Lista-familiares/", lista_familiares),
+    path("parientes/<vinculo>/<nombre>/<apellido>/<edad>/", Pariente),
+
 ]
